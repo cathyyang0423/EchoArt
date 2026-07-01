@@ -276,3 +276,15 @@ section {
   padding-top: 32px;
   padding-bottom: 80px;
 }
+/* Final navbar jump position fix */
+html {
+  scroll-padding-top: 155px;
+}
+
+section {
+  scroll-margin-top: 155px;
+}
+
+.section {
+  padding-top: 45px;
+}
