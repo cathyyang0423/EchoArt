@@ -386,7 +386,8 @@ footer {
     grid-template-columns: 1fr;
   }
 }
-.about-grid {
+@media (max-width: 900px) {
+  .about-grid {
   margin-top: 34px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
