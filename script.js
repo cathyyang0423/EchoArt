@@ -17,7 +17,13 @@ function scrollToSection(hash) {
   if (!targetSection) return;
 
   const headerHeight = header.offsetHeight;
-  const topPosition = targetSection.offsetTop - headerHeight - 18;
+let extraSpace = 18;
+
+if (hash === "#categories") {
+  extraSpace = 95;
+}
+
+const topPosition = targetSection.offsetTop - headerHeight - extraSpace;
 
   window.scrollTo({
     top: topPosition,
