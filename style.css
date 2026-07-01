@@ -254,3 +254,6 @@ footer {
     font-size: 36px;
   }
 }
+.nav-links a.active {
+  color: #f26f5c;
+}
