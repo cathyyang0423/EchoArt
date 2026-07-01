@@ -330,3 +330,8 @@ section {
     grid-template-columns: 1fr;
   }
 }
+/* Let the last section scroll to the top */
+#join {
+  min-height: calc(100vh - 120px);
+  padding-bottom: 220px;
+}
