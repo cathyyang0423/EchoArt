@@ -257,3 +257,11 @@ footer {
 .nav-links a.active {
   color: #f26f5c;
 }
+/* Fix section jumping under sticky navbar */
+html {
+  scroll-padding-top: 140px;
+}
+
+section {
+  scroll-margin-top: 140px;
+}
