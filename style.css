@@ -7,7 +7,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 220px;
+  scroll-padding-top: 120px;
 }
 
 body {
@@ -16,7 +16,7 @@ body {
 }
 
 section {
-  scroll-margin-top: 220px;
+  scroll-margin-top: 120px;
 }
 
 header {
