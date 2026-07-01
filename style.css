@@ -7,16 +7,11 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 0px;
 }
 
 body {
   background: #faf8f5;
   color: #181818;
-}
-
-section {
-  scroll-margin-top: 0px;
 }
 
 header {
@@ -217,8 +212,11 @@ header {
   font-weight: 700;
 }
 
+#join {
+  min-height: calc(100vh - 90px);
+}
+
 footer {
-  margin-top: 60px;
   background: #181818;
   color: white;
   padding: 38px 24px;
@@ -262,76 +260,4 @@ footer {
   .section h2 {
     font-size: 36px;
   }
-}
-/* Put section titles near the top under the navbar */
-html {
-  scroll-padding-top: 95px;
-}
-
-section {
-  scroll-margin-top: 95px;
-}
-
-.section {
-  padding-top: 32px;
-  padding-bottom: 80px;
-}
-/* Final navbar jump position fix */
-/* Final navbar jump position fix */
-html {
-  scroll-padding-top: 115px;
-}
-
-section {
-  scroll-margin-top: 115px;
-}
-
-.section {
-  padding-top: 24px;
-}
-/* Anchor jump fix: title near top under navbar */
-html {
-  scroll-padding-top: 0;
-}
-
-section {
-  scroll-margin-top: 105px;
-}
-
-.section {
-  padding-top: 18px;
-}
-.category-grid {
-  margin-top: 34px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 22px;
-}
-
-.category-card {
-  background: white;
-  border: 1px solid #e8e8e8;
-  border-radius: 22px;
-  padding: 28px;
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.04);
-}
-
-.category-card h3 {
-  font-size: 22px;
-  margin-bottom: 10px;
-}
-
-.category-card p {
-  color: #555;
-}
-
-@media (max-width: 900px) {
-  .category-grid {
-    grid-template-columns: 1fr;
-  }
-}
-/* Let the last section scroll to the top */
-#join {
-  min-height: calc(100vh - 120px);
-  padding-bottom: 220px;
 }
