@@ -20,7 +20,7 @@ function scrollToSection(hash) {
 let extraSpace = 18;
 
 if (hash === "#categories") {
-  extraSpace = 95;
+  extraSpace = -35;
 }
 
 const topPosition = targetSection.offsetTop - headerHeight - extraSpace;
