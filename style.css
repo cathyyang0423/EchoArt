@@ -289,3 +289,15 @@ section {
 .section {
   padding-top: 24px;
 }
+/* Anchor jump fix: title near top under navbar */
+html {
+  scroll-padding-top: 0;
+}
+
+section {
+  scroll-margin-top: 105px;
+}
+
+.section {
+  padding-top: 18px;
+}
