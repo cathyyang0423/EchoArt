@@ -1,13 +1,14 @@
-const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".nav-links a");
+const sections = document.querySelectorAll("section");
 
-window.addEventListener("scroll", () => {
+function updateActiveLink() {
   let currentSection = "";
 
   sections.forEach((section) => {
-    const sectionTop = section.offsetTop - 140;
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.offsetHeight;
 
-    if (window.scrollY >= sectionTop) {
+    if (window.scrollY >= sectionTop - 260 && window.scrollY < sectionTop + sectionHeight - 260) {
       currentSection = section.getAttribute("id");
     }
   });
@@ -19,4 +20,14 @@ window.addEventListener("scroll", () => {
       link.classList.add("active");
     }
   });
+}
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    navLinks.forEach((item) => item.classList.remove("active"));
+    link.classList.add("active");
+  });
 });
+
+window.addEventListener("scroll", updateActiveLink);
+window.addEventListener("load", updateActiveLink);
