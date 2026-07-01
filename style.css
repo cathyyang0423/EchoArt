@@ -216,3 +216,54 @@ footer {
     gap: 14px;
   }
 }
+.hero {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.hero-art {
+  position: relative;
+  height: 430px;
+}
+
+.floating-card {
+  position: absolute;
+  border-radius: 28px;
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.12);
+  background: linear-gradient(135deg, #ffb199, #a8d8ff);
+}
+
+.card-one {
+  width: 260px;
+  height: 340px;
+  top: 30px;
+  left: 70px;
+}
+
+.card-two {
+  width: 230px;
+  height: 280px;
+  top: 105px;
+  right: 10px;
+  background: linear-gradient(135deg, #f6e7cb, #9fd6c2);
+}
+
+.card-three {
+  width: 210px;
+  height: 160px;
+  left: 0;
+  bottom: 22px;
+  background: linear-gradient(135deg, #111, #777);
+}
+
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-art {
+    height: 330px;
+  }
+}
