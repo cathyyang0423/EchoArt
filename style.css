@@ -259,9 +259,9 @@ footer {
 }
 /* Fix section jumping under sticky navbar */
 html {
-  scroll-padding-top: 140px;
+  scroll-padding-top: 220px;
 }
 
 section {
-  scroll-margin-top: 140px;
+  scroll-margin-top: 220px;
 }
