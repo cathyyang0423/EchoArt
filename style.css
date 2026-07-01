@@ -277,14 +277,15 @@ section {
   padding-bottom: 80px;
 }
 /* Final navbar jump position fix */
+/* Final navbar jump position fix */
 html {
-  scroll-padding-top: 155px;
+  scroll-padding-top: 115px;
 }
 
 section {
-  scroll-margin-top: 155px;
+  scroll-margin-top: 115px;
 }
 
 .section {
-  padding-top: 45px;
+  padding-top: 24px;
 }
