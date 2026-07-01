@@ -1,48 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>ArtVerse</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EchoArt</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header>
-    <h1>ArtVerse</h1>
-    <p>A community built by students, for students.</p>
+    <nav class="navbar">
+      <h1 class="logo">EchoArt</h1>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#submit">Submit</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#join">Join Us</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#submit">Submit</a>
-    <a href="#join">Join Us</a>
-  </nav>
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <p class="tagline">Built by students, for students</p>
+      <h2>Share, explore, and celebrate creativity through art.</h2>
+      <p>
+        EchoArt is a student-led online platform where students can share artwork,
+        discover new ideas, and build an inspiring creative community.
+      </p>
 
-  <section id="about">
-    <h2>About ArtVerse</h2>
+      <div class="hero-buttons">
+        <a href="#submit" class="btn primary-btn">Submit Artwork</a>
+        <a href="#gallery" class="btn secondary-btn">Explore Gallery</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="mission">
+    <h2>Our Mission</h2>
     <p>
-      ArtVerse is more than a website—it's a community built by students, for students.
-      Share, explore, and celebrate creativity through art, photography, design, writing, and more.
+      EchoArt is more than a website. It is a community built by students, for students.
+      We welcome artists, photographers, designers, writers, and anyone interested in creativity.
     </p>
   </section>
 
-  <section id="gallery">
-    <h2>Student Gallery</h2>
-    <p>Coming soon: student artwork, photos, designs, and creative ideas.</p>
+  <section class="section" id="gallery">
+    <h2>Gallery</h2>
+
+    <div class="gallery-grid">
+      <div class="art-card">
+        <div class="art-placeholder"></div>
+        <h3>Painting</h3>
+        <p>Student paintings and mixed media artwork.</p>
+      </div>
+
+      <div class="art-card">
+        <div class="art-placeholder"></div>
+        <h3>Photography</h3>
+        <p>Photography, portraits, landscapes, and visual stories.</p>
+      </div>
+
+      <div class="art-card">
+        <div class="art-placeholder"></div>
+        <h3>Digital Art</h3>
+        <p>Illustrations, designs, and digital creative experiments.</p>
+      </div>
+    </div>
   </section>
 
-  <section id="submit">
+  <section class="section" id="submit">
     <h2>Submit Your Work</h2>
-    <p>Students will be able to submit artwork anonymously or with their name.</p>
+    <p>
+      For now, EchoArt submissions will use a Google Form. Later, we can add uploads,
+      anonymous submissions, artwork descriptions, likes, and comments.
+    </p>
+
+    <a href="#" class="btn primary-btn">Google Form Coming Soon</a>
   </section>
 
-  <section id="join">
+  <section class="section" id="about">
+    <h2>About EchoArt</h2>
+    <p>
+      EchoArt was created to give students a professional, welcoming space to share
+      creative work and support one another.
+    </p>
+  </section>
+
+  <section class="section" id="join">
     <h2>Join Us</h2>
-    <p>We welcome artists, designers, photographers, writers, reviewers, planners, and website helpers.</p>
+    <p>EchoArt needs students for many creative and leadership roles.</p>
+
+    <div class="roles">
+      <span>President</span>
+      <span>Vice President</span>
+      <span>Editors</span>
+      <span>Review Team</span>
+      <span>Website Team</span>
+      <span>Event Planning</span>
+      <span>Designers</span>
+      <span>Marketing</span>
+    </div>
   </section>
 
   <footer>
-    <p>© 2026 ArtVerse</p>
+    <p>© 2026 EchoArt. Built by students, for students.</p>
   </footer>
 
 </body>
