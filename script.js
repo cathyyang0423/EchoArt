@@ -11,21 +11,29 @@ function setActiveLink(hash) {
   });
 }
 
+function scrollToSection(hash) {
+  const targetSection = document.querySelector(hash);
+
+  if (!targetSection) return;
+
+  const headerHeight = header.offsetHeight;
+  const topPosition = targetSection.offsetTop - headerHeight - 18;
+
+  window.scrollTo({
+    top: topPosition,
+    behavior: "smooth"
+  });
+
+  history.pushState(null, "", hash);
+  setActiveLink(hash);
+}
+
 navLinks.forEach((link) => {
   link.addEventListener("click", (event) => {
     event.preventDefault();
 
     const hash = link.getAttribute("href");
-    const targetSection = document.querySelector(hash);
-    const headerHeight = header.offsetHeight;
-
-    window.scrollTo({
-      top: targetSection.offsetTop - headerHeight - 20,
-      behavior: "smooth"
-    });
-
-    history.pushState(null, "", hash);
-    setActiveLink(hash);
+    scrollToSection(hash);
   });
 });
 
