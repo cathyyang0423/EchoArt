@@ -358,3 +358,31 @@ footer {
 .digital-art {
   background: linear-gradient(135deg, #8e7dff, #ffb199);
 }
+.about-grid {
+  margin-top: 34px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.about-card {
+  background: white;
+  border: 1px solid #e8e8e8;
+  border-radius: 22px;
+  padding: 24px;
+}
+
+.about-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.about-card p {
+  font-size: 16px;
+}
+
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
