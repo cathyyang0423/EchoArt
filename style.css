@@ -328,3 +328,17 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+.feature-grid {
+  margin-top: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.feature-grid span {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 999px;
+  padding: 12px 18px;
+  font-weight: 700;
+}
