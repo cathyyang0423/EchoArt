@@ -301,3 +301,32 @@ section {
 .section {
   padding-top: 18px;
 }
+.category-grid {
+  margin-top: 34px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.category-card {
+  background: white;
+  border: 1px solid #e8e8e8;
+  border-radius: 22px;
+  padding: 28px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.04);
+}
+
+.category-card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.category-card p {
+  color: #555;
+}
+
+@media (max-width: 900px) {
+  .category-grid {
+    grid-template-columns: 1fr;
+  }
+}
