@@ -396,10 +396,12 @@ footer h2 {
 }
 .leader-card {
   cursor: pointer;
+  align-self: start;
 }
 
-.leader-card summary {
-  list-style: none;
+.leader-card {
+  cursor: pointer;
+  align-self: start;
 }
 
 .leader-card summary::-webkit-details-marker {
