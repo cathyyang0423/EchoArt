@@ -377,9 +377,9 @@ footer h2 {
     gap: 16px;
   }
 
-  .hero {
-    padding: 70px 24px;
-  }
+ .hero {
+  padding: 40px 24px 70px;
+}
 
   .section h2 {
     font-size: 36px;
