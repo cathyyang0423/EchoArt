@@ -391,3 +391,8 @@ footer a {
     grid-template-columns: 1fr;
   }
 }
+#mission,
+#features,
+#future-features {
+  padding-top: 20px;
+}
