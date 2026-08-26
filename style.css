@@ -442,3 +442,16 @@ footer h2 {
 .application-btn {
   margin-top: 40px;
 }
+.gallery-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.sculpture-art {
+  background: linear-gradient(135deg, #f6e7cb, #9fd6c2);
+}
+
+.literature-art {
+  background: linear-gradient(135deg, #d8c7ff, #f6e7cb);
+}
