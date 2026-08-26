@@ -14,16 +14,18 @@ function setActiveLink(hash) {
 function scrollToSection(hash) {
   const targetSection = document.querySelector(hash);
 
-  if (!targetSection) return;
+  if (!targetSection) {
+    return;
+  }
 
   const headerHeight = header.offsetHeight;
-let extraSpace = 18;
+  let extraSpace = 18;
 
-if (hash === "#categories") {
-  extraSpace = -30;
-}
+  if (hash === "#categories") {
+    extraSpace = 25;
+  }
 
-const topPosition = targetSection.offsetTop - headerHeight - extraSpace;
+  const topPosition = targetSection.offsetTop - headerHeight - extraSpace;
 
   window.scrollTo({
     top: topPosition,
@@ -36,9 +38,13 @@ const topPosition = targetSection.offsetTop - headerHeight - extraSpace;
 
 navLinks.forEach((link) => {
   link.addEventListener("click", (event) => {
-    event.preventDefault();
-
     const hash = link.getAttribute("href");
+
+    if (!hash.startsWith("#")) {
+      return;
+    }
+
+    event.preventDefault();
     scrollToSection(hash);
   });
 });
