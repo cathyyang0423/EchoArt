@@ -183,7 +183,8 @@ header {
 
 .join-grid {
   grid-template-columns: repeat(2, 1fr);
-  margin-bottom: 36px;
+  align-items: start;
+  margin-bottom: 40px;
 }
 
 .category-card,
