@@ -391,3 +391,15 @@ footer a {
     grid-template-columns: 1fr;
   }
 }
+#mission,
+#features,
+#future-features {
+  padding-top: 33px;
+}
+
+#mission h2,
+#features h2,
+#future-features h2 {
+  font-size: 56px;
+  line-height: 1.05;
+}
