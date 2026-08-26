@@ -396,3 +396,13 @@ footer a {
 #future-features {
   padding-top: 20px;
 }
+#mission,
+#features,
+#future-features,
+.tight-top {
+  padding-top: 20px;
+}
+
+.submit-form-btn {
+  margin-top: 24px;
+}
