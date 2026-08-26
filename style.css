@@ -406,3 +406,23 @@ footer a {
 .submit-form-btn {
   margin-top: 24px;
 }
+.art-category {
+  font-size: 16px;
+  font-weight: 800;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+#mission {
+  padding-bottom: 80px;
+}
+
+#submit {
+  padding-top: 40px;
+}
+
+.submit-form-btn {
+  margin-top: 24px;
+}
