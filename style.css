@@ -358,3 +358,30 @@ footer {
 #submit .btn {
   margin-top: 32px;
 }
+footer h2 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.footer-links {
+  margin: 22px 0;
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.footer-links a:hover {
+  color: #f26f5c;
+}
+
+.copyright {
+  color: #bbbbbb;
+  font-size: 14px;
+}
