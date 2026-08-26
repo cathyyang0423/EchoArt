@@ -414,3 +414,28 @@ footer h2 {
 .leader-info p {
   margin-bottom: 8px;
 }
+.leader-card {
+  cursor: pointer;
+}
+
+.leader-card summary {
+  list-style: none;
+}
+
+.leader-card summary::-webkit-details-marker {
+  display: none;
+}
+
+.leader-info {
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid #e8e8e8;
+}
+
+.leader-info p {
+  margin-bottom: 8px;
+}
+
+.application-btn {
+  margin-top: 40px;
+}
