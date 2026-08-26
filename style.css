@@ -163,9 +163,7 @@ header {
 }
 
 .category-grid,
-.gallery-grid,
-.about-grid,
-.join-grid {
+.gallery-grid {
   margin-top: 34px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -174,8 +172,18 @@ header {
 
 .about-grid,
 .join-grid {
-  grid-template-columns: repeat(4, 1fr);
+  margin-top: 34px;
+  display: grid;
   gap: 18px;
+}
+
+.about-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.join-grid {
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 36px;
 }
 
 .category-card,
@@ -277,6 +285,14 @@ header {
   margin-bottom: 8px;
 }
 
+.application-btn {
+  margin-top: 10px;
+}
+
+#submit .btn {
+  margin-top: 32px;
+}
+
 .feature-grid {
   margin-top: 28px;
   display: flex;
@@ -284,8 +300,7 @@ header {
   gap: 12px;
 }
 
-.feature-grid span,
-.roles span {
+.feature-grid span {
   background: white;
   border: 1px solid #dddddd;
   border-radius: 999px;
@@ -293,18 +308,39 @@ header {
   font-weight: 700;
 }
 
-.roles {
-  margin-top: 28px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-
 footer {
   background: #181818;
   color: white;
-  padding: 38px 24px;
+  padding: 44px 24px;
   text-align: center;
+}
+
+footer h2 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.footer-links {
+  margin: 22px 0;
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.footer-links a:hover {
+  color: #f26f5c;
+}
+
+.copyright {
+  color: #bbbbbb;
+  font-size: 14px;
 }
 
 @media (max-width: 900px) {
@@ -347,41 +383,4 @@ footer {
   .section h2 {
     font-size: 36px;
   }
-}
-.join-grid {
-  margin-bottom: 36px;
-}
-
-.application-btn {
-  margin-top: 10px;
-}
-#submit .btn {
-  margin-top: 32px;
-}
-footer h2 {
-  font-size: 28px;
-  margin-bottom: 8px;
-}
-
-.footer-links {
-  margin: 22px 0;
-  display: flex;
-  justify-content: center;
-  gap: 22px;
-  flex-wrap: wrap;
-}
-
-.footer-links a {
-  color: white;
-  text-decoration: none;
-  font-weight: 700;
-}
-
-.footer-links a:hover {
-  color: #f26f5c;
-}
-
-.copyright {
-  color: #bbbbbb;
-  font-size: 14px;
 }
