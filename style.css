@@ -58,7 +58,7 @@ header {
 .hero {
   max-width: 1150px;
   margin: 0 auto;
-  padding: 70px 24px 90px;
+  padding: 45px 24px 90px;
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
   gap: 60px;
