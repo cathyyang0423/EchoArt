@@ -434,3 +434,23 @@ footer p {
 .submit-page .button-row {
   margin-top: 34px;
 }
+.submit-page a.submit-button,
+.submit-page a.submit-button:visited {
+  margin-top: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  min-height: 54px;
+  padding: 14px 32px;
+  border-radius: 999px;
+  background: #111;
+  color: #fff;
+  font-weight: 800;
+  text-decoration: none;
+  border: 1px solid #111;
+}
+
+.submit-page a.submit-button:hover {
+  transform: translateY(-2px);
+}
