@@ -430,3 +430,7 @@ footer p {
     grid-template-columns: 1fr;
   }
 }
+/* Adds more space above the Submit Artwork button */
+.submit-page .button-row {
+  margin-top: 34px;
+}
