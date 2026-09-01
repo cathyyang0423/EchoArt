@@ -464,3 +464,29 @@ footer p {
 .leader-card {
   margin-bottom: 0;
 }
+.leaders-page .leader-grid {
+  margin-top: 46px !important;
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  gap: 30px !important;
+}
+
+.leaders-page .leader-card {
+  cursor: pointer;
+  min-height: 170px;
+}
+
+.leaders-page .leader-details {
+  display: none;
+  margin-top: 22px;
+  padding-top: 20px;
+  border-top: 1px solid #eadfd8;
+}
+
+.leaders-page .leader-card.open .leader-details {
+  display: block;
+}
+
+.leaders-page .leader-details p {
+  margin-bottom: 8px;
+}
