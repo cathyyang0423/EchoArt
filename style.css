@@ -499,3 +499,20 @@ footer p {
 .leaders-page .page-section > p {
   margin-bottom: 0 !important;
 }
+/* Leaders page final spacing fix */
+.leaders-page .leader-grid {
+  margin-top: 42px !important;
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  gap: 34px !important;
+}
+
+.leaders-page .leader-card {
+  min-height: 0 !important;
+  padding: 28px 32px !important;
+}
+
+.leaders-page .leader-card p {
+  margin-top: 10px !important;
+  margin-bottom: 0 !important;
+}
