@@ -490,3 +490,12 @@ footer p {
 .leaders-page .leader-details p {
   margin-bottom: 8px;
 }
+/* Leaders page outside spacing */
+.leaders-page .leader-grid {
+  margin-top: 42px !important;
+  gap: 34px !important;
+}
+
+.leaders-page .page-section > p {
+  margin-bottom: 0 !important;
+}
