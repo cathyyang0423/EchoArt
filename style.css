@@ -454,3 +454,13 @@ footer p {
 .submit-page a.submit-button:hover {
   transform: translateY(-2px);
 }
+/* Leaders page spacing */
+.leader-grid {
+  margin-top: 45px;
+  display: grid;
+  gap: 28px;
+}
+
+.leader-card {
+  margin-bottom: 0;
+}
