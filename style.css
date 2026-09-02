@@ -516,3 +516,29 @@ footer p {
   margin-top: 10px !important;
   margin-bottom: 0 !important;
 }
+/* Leaders page spacing fix */
+.leaders-page .leader-grid {
+  margin-top: 40px !important;
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  gap: 28px !important;
+}
+
+.leaders-page .leader-card {
+  min-height: 0 !important;
+  height: auto !important;
+  padding: 26px 32px !important;
+}
+
+.leaders-page .leader-card h3 {
+  margin-bottom: 8px !important;
+}
+
+.leaders-page .leader-card p {
+  margin: 0 !important;
+}
+
+.leaders-page .leader-details {
+  margin-top: 18px !important;
+  padding-top: 16px !important;
+}
