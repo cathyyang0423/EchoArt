@@ -335,7 +335,7 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   gap: 34px;
-  margin-top: 50px;
+  margin-top: 48px;
 }
 
 .leaders-page .leader-card {
