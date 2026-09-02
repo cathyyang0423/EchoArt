@@ -84,6 +84,12 @@ main {
   gap: 70px;
 }
 
+/* Reduce vertical space on home page hero so the stacked cards sit closer together */
+.home-page .hero {
+  padding-top: 32px;
+  padding-bottom: 24px;
+}
+
 .tagline {
   color: #5e5e5e;
   font-size: 22px;
@@ -411,6 +417,10 @@ footer p {
   .hero {
     grid-template-columns: 1fr;
     padding-top: 54px;
+  }
+
+  .home-page .hero {
+    padding-top: 24px; /* keep mobile hero a bit tighter on home page */
   }
 
   .hero h2,
