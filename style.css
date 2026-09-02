@@ -338,6 +338,14 @@ main {
   margin-top: 48px;
 }
 
+/* Move the title + intro up on Leaders page (keep presidents grid in place) */
+.leaders-page .page-section {
+  padding-top: 0;
+}
+.leaders-page .page-section h2 {
+  margin-top: 0;
+}
+
 .leaders-page .leader-card {
   min-height: 0;
   height: auto;
