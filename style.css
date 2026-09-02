@@ -495,7 +495,7 @@ footer p {
   margin-top: 48px;
 }
 
-/* Reset top padding on main.page when showing Leaders so header->title matches About */
+/* Restore main.page top padding for Leaders so header->title spacing matches About */
 .page.leaders-page {
-  padding-top: 0;
+  padding-top: 72px;
 }
