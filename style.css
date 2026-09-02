@@ -497,3 +497,11 @@ footer p {
 .page.leaders-page {
   padding-top: 0;
 }
+.leaders-page .join-grid {
+  display: grid;
+  row-gap: 28px;
+}
+.leaders-page .leader-card {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
