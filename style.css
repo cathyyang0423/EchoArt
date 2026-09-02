@@ -569,3 +569,19 @@ footer p {
 .leaders-page .leader-card > p {
   margin: 0 !important;
 }
+/* Make the big spaces above Mission and Future Features about half smaller */
+
+/* Home page: space between hero and Our Mission */
+.hero {
+  padding-bottom: 42px !important;
+}
+
+/* About page: space between About cards and Future Features */
+.about-future {
+  margin-top: 36px !important;
+}
+
+/* If Future Features is just a section after the about cards */
+.about-page .about-grid {
+  margin-bottom: 36px !important;
+}
