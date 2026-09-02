@@ -390,12 +390,17 @@ footer p {
     gap: 16px;
   }
 
-  .hero {
-    min-height: auto;
-    grid-template-columns: 1fr;
-    gap: 34px;
-    padding-top: 48px;
-  }
+ .hero {
+  max-width: 1180px;
+  min-height: 640px;
+  margin: 0 auto;
+  padding: 46px 28px 82px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 470px);
+  align-items: center;
+  gap: 64px;
+  overflow: hidden;
+}
 
   .hero h2 {
     font-size: 48px;
