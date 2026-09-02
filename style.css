@@ -151,6 +151,11 @@ main {
   height: 520px;
 }
 
+/* Shorten hero-art on the home page so the cards appear closer together */
+.home-page .hero-art {
+  height: 480px;
+}
+
 .floating-card {
   position: absolute;
   border-radius: 34px;
@@ -171,6 +176,11 @@ main {
   top: 130px;
   right: 30px;
   background: linear-gradient(135deg, #fff0a8, #9de9c7);
+}
+
+/* Lift the middle card on the home page so it overlaps closer to the top card */
+.home-page .card-two {
+  top: 90px;
 }
 
 .card-three {
@@ -458,6 +468,10 @@ footer p {
   .card-two {
     width: 220px;
     height: 250px;
+  }
+
+  .home-page .card-two {
+    top: 80px; /* lift the middle card a bit on mobile as well */
   }
 
   .card-three {
