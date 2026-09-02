@@ -338,9 +338,9 @@ main {
   margin-top: 48px;
 }
 
-/* Move the title + intro up on Leaders page (keep presidents grid in place) */
+/* Ensure Leaders page spacing matches About page */
 .leaders-page .page-section {
-  padding-top: 24px;
+  padding-top: 48px;
 }
 .leaders-page .page-section h2 {
   margin-top: 0;
