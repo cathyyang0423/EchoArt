@@ -496,3 +496,42 @@ footer p {
   background: #ff7568;
   box-shadow: 0 24px 54px rgba(255, 117, 104, 0.24);
 }
+/* Fix homepage button sizes */
+.hero-buttons {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  margin-top: 34px;
+}
+
+.hero-buttons .btn {
+  width: 230px;
+  height: 72px;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  font-size: 20px;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+/* Make the outline button match the black button */
+.hero-buttons .secondary-btn {
+  background: white;
+  color: #111;
+  border: 2px solid #e5e5e5;
+}
+
+/* Make Our Mission closer to the hero */
+.home-page #mission,
+#mission.section {
+  padding-top: 40px !important;
+  margin-top: 0 !important;
+}
+
+/* If your homepage uses section class only */
+.home-page .section:first-of-type {
+  padding-top: 40px !important;
+}
