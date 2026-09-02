@@ -542,3 +542,30 @@ footer p {
   margin-top: 18px !important;
   padding-top: 16px !important;
 }
+/* Leaders page: outside spacing fix */
+.leaders-page .page-section > p {
+  margin-bottom: 44px !important;
+}
+
+.leaders-page .leader-grid {
+  margin-top: 0 !important;
+  display: block !important;
+}
+
+.leaders-page .leader-card {
+  min-height: 0 !important;
+  height: auto !important;
+  padding: 22px 32px !important;
+}
+
+.leaders-page .leader-card + .leader-card {
+  margin-top: 34px !important;
+}
+
+.leaders-page .leader-card h3 {
+  margin: 0 0 8px 0 !important;
+}
+
+.leaders-page .leader-card > p {
+  margin: 0 !important;
+}
