@@ -508,3 +508,12 @@ footer p {
 .leaders-page .join-grid {
   margin-top: 7px;
 }
+
+.gallery-grid img.sculpture-cover {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+  display: block;
+}
