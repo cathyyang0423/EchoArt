@@ -527,3 +527,19 @@ footer p {
   border-radius: 20px;
   display: block;
 }
+
+/* Gallery cover images */
+.gallery-grid img.art-image {
+  width: 100% !important;
+  height: 230px !important;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+  display: block;
+}
+
+/* Show the entire digital artwork */
+.gallery-grid img.digital-cover {
+  object-fit: contain;
+  background-color: #000;
+}
