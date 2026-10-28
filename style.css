@@ -578,3 +578,13 @@ footer p {
   border-radius: 18px;
   display: block;
 }
+
+/* Photography cover */
+.gallery-grid img.photography-cover {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 18px;
+  display: block;
+}
