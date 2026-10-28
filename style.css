@@ -568,12 +568,13 @@ footer p {
   padding-bottom: 14px;
 }
 
-/* Painting cover */
+
+/* Painting cover - show the colored pencils */
 .gallery-grid img.painting-cover {
   width: 100%;
   height: 220px;
   object-fit: cover;
-  object-position: center;
+  object-position: center bottom;
   border-radius: 18px;
   display: block;
 }
