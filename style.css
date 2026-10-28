@@ -349,11 +349,15 @@ main {
   object-position: center;
 }
 
-/* Sculpture cover */
 
+/* Sculpture cover - fill the entire box */
 .gallery-grid img.sculpture-cover {
-  object-fit: contain;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
   object-position: center;
+  border-radius: 18px;
+  display: block;
 }
 
 /* Original artwork styles */
