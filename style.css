@@ -588,3 +588,14 @@ footer p {
   border-radius: 18px;
   display: block;
 }
+
+/* Digital Art cover - fit entire artwork */
+.gallery-grid img.digital-cover {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  object-position: center;
+  background: #000;
+  border-radius: 18px;
+  display: block;
+}
