@@ -528,18 +528,23 @@ footer p {
   display: block;
 }
 
-/* Gallery cover images */
-.gallery-grid img.art-image {
-  width: 100% !important;
-  height: 230px !important;
-  object-fit: cover;
-  object-position: center;
+
+/* Restore original Gallery cover dimensions */
+.gallery-grid .art-image {
+  width: 100%;
+  height: 230px;
   border-radius: 20px;
   display: block;
+  box-sizing: border-box;
 }
 
-/* Show the entire digital artwork */
-.gallery-grid img.digital-cover {
+/* Fit uploaded artwork inside the cover boxes */
+.gallery-grid img.art-image {
   object-fit: contain;
-  background-color: #000;
+  object-position: center;
+  background: linear-gradient(
+    135deg,
+    #ffb4a2,
+    #a8d8ff
+  );
 }
