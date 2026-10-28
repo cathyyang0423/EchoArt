@@ -1,4 +1,7 @@
+
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700;800;900&display=swap");
+
+/* GENERAL */
 
 * {
   margin: 0;
@@ -19,6 +22,8 @@ body {
     radial-gradient(circle at 70% 90%, rgba(207, 244, 218, 0.35), transparent 35%),
     #fffdfb;
 }
+
+/* HEADER AND NAVIGATION */
 
 header {
   background: rgba(255, 255, 255, 0.88);
@@ -67,6 +72,8 @@ header {
   color: #ff7568;
 }
 
+/* MAIN LAYOUT */
+
 main {
   max-width: 1500px;
   margin: 0 auto;
@@ -84,7 +91,6 @@ main {
   gap: 70px;
 }
 
-/* Reduce vertical space on home page hero so the stacked cards sit closer together */
 .home-page .hero {
   padding-top: 32px;
   padding-bottom: 24px;
@@ -151,7 +157,6 @@ main {
   height: 520px;
 }
 
-/* Shorten hero-art on the home page so the cards appear closer together */
 .home-page .hero-art {
   height: 480px;
 }
@@ -178,7 +183,6 @@ main {
   background: linear-gradient(135deg, #fff0a8, #9de9c7);
 }
 
-/* Lift the middle card on the home page so it overlaps closer to the top card */
 .home-page .card-two {
   top: 90px;
 }
@@ -191,10 +195,13 @@ main {
   background: linear-gradient(135deg, #060606, #777);
 }
 
-/* THIS FIXES THE MISSION SPACE */
+/* MISSION SECTION */
+
 .home-page #mission {
   padding-top: 48px;
 }
+
+/* GENERAL SECTIONS */
 
 .section {
   padding: 80px 0;
@@ -228,14 +235,14 @@ main {
   padding-top: 48px;
 }
 
-/* CARDS */
+/* CARD GRIDS */
 
 .category-grid,
 .gallery-grid,
 .about-grid {
   margin-top: 48px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 28px;
 }
 
@@ -266,6 +273,8 @@ main {
   color: #555;
 }
 
+/* CATEGORY DOTS */
+
 .category-dot {
   display: block;
   width: 52px;
@@ -294,18 +303,60 @@ main {
   background: linear-gradient(135deg, #d7caa5, #a8e6ce);
 }
 
+/* GALLERY CARDS */
+
 .art-card {
   display: block;
   color: #111;
   text-decoration: none;
 }
 
-.art-image {
+/* All four Gallery covers use identical dimensions */
+
+.gallery-grid .art-image {
+  width: 100%;
   height: 220px;
   border-radius: 18px;
   margin-bottom: 24px;
+  display: block;
+  box-sizing: border-box;
   background: linear-gradient(135deg, #ffad98, #a9d8ff);
 }
+
+/* Uploaded artwork fits without stretching or cropping */
+
+.gallery-grid img.art-image {
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Painting placeholder */
+
+.gallery-grid .painting-art {
+  background: linear-gradient(135deg, #ffad98, #a9d8ff);
+}
+
+/* Photography placeholder */
+
+.gallery-grid .photo-art {
+  background: linear-gradient(135deg, #ffad98, #a9d8ff);
+}
+
+/* Digital Art cover */
+
+.gallery-grid img.digital-cover {
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Sculpture cover */
+
+.gallery-grid img.sculpture-cover {
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Original artwork styles */
 
 .photo-image {
   background: linear-gradient(135deg, #111, #91cbf5);
@@ -323,13 +374,13 @@ main {
   background: linear-gradient(135deg, #f4d7b7, #d9c7ff);
 }
 
-/* ABOUT */
+/* ABOUT PAGE */
 
 .about-grid {
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
-/* LEADERS */
+/* LEADERS PAGE */
 
 .leaders-page .leaders-grid {
   display: grid;
@@ -360,7 +411,7 @@ main {
   display: block;
 }
 
-/* SUBMIT */
+/* SUBMIT PAGE */
 
 .submit-page .btn {
   margin-top: 36px;
@@ -403,9 +454,10 @@ footer p {
   font-size: 18px;
 }
 
-/* MOBILE */
+/* MOBILE RESPONSIVE DESIGN */
 
 @media (max-width: 900px) {
+
   .navbar {
     padding: 26px 22px;
     flex-direction: column;
@@ -430,7 +482,7 @@ footer p {
   }
 
   .home-page .hero {
-    padding-top: 24px; /* keep mobile hero a bit tighter on home page */
+    padding-top: 24px;
   }
 
   .hero h2,
@@ -471,7 +523,7 @@ footer p {
   }
 
   .home-page .card-two {
-    top: 80px; /* lift the middle card a bit on mobile as well */
+    top: 80px;
   }
 
   .card-three {
@@ -484,9 +536,11 @@ footer p {
   .about-grid {
     grid-template-columns: 1fr;
   }
+
 }
 
-/* Safe override to ensure Leaders spacing matches About page */
+/* LEADERS PAGE SPACING */
+
 .leaders-page .page-section {
   padding-top: 48px;
 }
@@ -494,46 +548,18 @@ footer p {
 .leaders-page .leaders-grid {
   margin-top: 48px;
 }
+
 .page.leaders-page {
   padding-top: 0;
 }
+
 .leaders-page .join-grid {
   display: grid;
   row-gap: 28px;
-}
-.leaders-page .leader-card {
-  padding-top: 14px;
-  padding-bottom: 14px;
-}
-.leaders-page .join-grid {
   margin-top: 7px;
 }
 
-/* GALLERY COVER IMAGES - FINAL FIX */
-
-/* All gallery covers have the same dimensions */
-.gallery-grid .art-image {
-  width: 100%;
-  height: 220px;
-  border-radius: 18px;
-  margin-bottom: 24px;
-  display: block;
-  box-sizing: border-box;
-}
-
-/* Uploaded images */
-.gallery-grid img.art-image {
-  object-fit: contain;
-  object-position: center;
-  background: linear-gradient(135deg, #ffad98, #a9d8ff);
-}
-
-/* Digital artwork */
-.gallery-grid img.digital-cover {
-  object-fit: contain;
-}
-
-/* Sculpture artwork */
-.gallery-grid img.sculpture-cover {
-  object-fit: contain;
+.leaders-page .leader-card {
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
