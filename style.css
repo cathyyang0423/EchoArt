@@ -611,3 +611,19 @@ footer p {
 .home-page .hero-text h2 {
   letter-spacing: 1.5px;
 }
+/* Turn the black card into a circle */
+.hero-art .card-three {
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Logo inside the circle */
+.hero-art .card-three .hero-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+}
