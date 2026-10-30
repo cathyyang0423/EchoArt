@@ -631,3 +631,7 @@ footer p {
   border-radius: 50%;
   display: block;
 }
+/* Reduce space above Future Events */
+.future-events {
+  margin-top: -70px;
+}
