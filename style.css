@@ -635,3 +635,23 @@ footer p {
 .future-events {
   margin-top: -75px;
 }
+
+/* Future Events - three matching cards */
+.future-events .about-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  align-items: stretch;
+}
+
+.future-events .about-card {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+  .future-events .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
