@@ -655,3 +655,18 @@ footer p {
     grid-template-columns: 1fr;
   }
 }
+
+/* Future Events: make the last card wider */
+.future-events .about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  gap: 24px;
+  width: 100%;
+}
+
+/* Keep mobile layout responsive */
+@media (max-width: 768px) {
+  .future-events .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
