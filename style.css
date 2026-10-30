@@ -608,3 +608,6 @@ footer p {
   color: #111;
   margin-bottom: 12px;
 }
+.home-page .hero-text h2 {
+  letter-spacing: 1px;
+}
