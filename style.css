@@ -706,3 +706,8 @@ footer p {
   display: block;
   flex-shrink: 0;
 }
+
+/* Add space between description and President cards */
+.leaders-page .join-grid {
+  margin-top: 30px;
+}
