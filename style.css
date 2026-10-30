@@ -670,3 +670,21 @@ footer p {
     grid-template-columns: 1fr;
   }
 }
+
+/* Logo next to EchoArt title */
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar-logo {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  flex-shrink: 0;
+}
