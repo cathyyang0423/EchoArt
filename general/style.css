@@ -740,3 +740,33 @@ footer p {
   display: block;
   border-radius: inherit;
 }
+
+/* Interactive overlapping artwork */
+
+.hero-art .floating-card {
+  cursor: pointer;
+}
+
+/* Original layering order */
+.hero-art .card-one {
+  z-index: 1;
+}
+
+.hero-art .card-two {
+  z-index: 2;
+}
+
+.hero-art .card-three {
+  z-index: 3;
+}
+
+/* Clicked artwork moves to the front */
+.hero-art .floating-card.is-front {
+  z-index: 10;
+}
+
+/* Keyboard focus */
+.hero-art .floating-card:focus-visible {
+  outline: 3px solid #ff7568;
+  outline-offset: 4px;
+}
