@@ -711,3 +711,17 @@ footer p {
 .leaders-page .join-grid {
   margin-top: 30px;
 }
+
+/* Green card artwork cover */
+.hero-art .card-two {
+  overflow: hidden;
+}
+
+.hero-art .card-two .green-card-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: inherit;
+}
